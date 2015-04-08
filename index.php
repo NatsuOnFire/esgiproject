@@ -2,15 +2,9 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
 	session_start();
-	require("facebook-php-sdk-v4-4.0-dev/autoload.php");
-
-	use Facebook\FacebookSession;
-	use Facebook\FacebookRedirectLoginHelper;
-	use Facebook\FacebookRequest;
-	use Facebook\GraphUser;
-	use Facebook\FacebookRequestExeption;
-	use Facebook\FacebookAuthorizationException;
-
+	
+	require('libFacebook.php');
+	
 	const APPID = "400624373444818";
 	const APPSECRET = "11514e700dcd954ec5d72d1e80a2dd96";
 
@@ -23,8 +17,6 @@
 	}else{
 		$session = $helper->getSessionFromRedirect();
 	}
-
-	$loginUrl = $helper->getLoginUrl();
 
 ?>
 
@@ -46,6 +38,9 @@
 	<?php
 		if($session){
 			try{
+				$token = $session->getAccessToken();
+				$_SESSION['fb_token'] = $token;
+				
 				$user_profile = (new FacebookRequest(
 					$session, 'GET', '/me'
 				))->execute()->getGraphObject(GraphUser::className());
@@ -57,6 +52,7 @@
 				echo $e->getMessage();
 			}
 		}else{
+			$loginUrl = $helper->getLoginUrl();
 			echo 'Pas connecté. <a href="'.$loginUrl.'">Connectez-vous</a>';
 		}
 	?>
