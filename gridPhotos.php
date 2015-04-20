@@ -37,7 +37,7 @@
 	</div>
 	
 	<script type="text/javascript">
-	$(document).ready(function() {
+	jQuery(document).ready(function() {
 		$('.popup-gallery').magnificPopup({
 			delegate: 'a',
 			type: 'image',
