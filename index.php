@@ -61,6 +61,7 @@
 		<meta name="description" content="App Facebook">
 		<link rel="stylesheet" href="./css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/magnific-popup.css">
 	</head>
 	<body>
 		                
@@ -88,7 +89,8 @@
               </div><!-- /.container -->
                 
         <script src="./js/jquery-1.11.2.min.js"></script>      
-        <script src="./js/bootstrap.min.js"></script>     
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/magnific-popup.js"></script>  
         <script>
 			  window.fbAsyncInit = function() {
 			    FB.init({
