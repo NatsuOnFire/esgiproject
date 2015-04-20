@@ -5,9 +5,9 @@
 	$response = $request->execute();
 	$graphObject = $response->getGraphObject()->asArray();
 
-	//echo "<pre>";
-	//print_r($graphObject);
-	//echo "</pre>";
+	echo "<pre>";
+	print_r($graphObject);
+	echo "</pre>";
 	
 	?>
 	
