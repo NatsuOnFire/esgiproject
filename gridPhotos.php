@@ -12,7 +12,7 @@
 	?>
 	
 	<div class="bs-photo">
-		<div class="container">
+		<div>
 			<div class="row">
 
 	<?php
