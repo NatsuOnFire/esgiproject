@@ -5,11 +5,11 @@
 	$response = $request->execute();
 	$graphObject = $response->getGraphObject()->asArray();
 
-	//echo "<pre>";
-	//print_r($graphObject);
-	//echo "</pre>";
+	echo "<pre>";
+	print_r($graphObject);
+	echo "</pre>";
 
-	foreach ($graphObject["data"] as $image) {
-		echo "<img width='300px' src='".$image->images[0]->source."'>";
-	}
+	foreach ($graphObject["data"] as $image) { ?>
+		<img width="300px" class="img-thumbnail" src="<?php $image->images[0]->source ?>">
+	<?php }?>
 ?>
