@@ -2,3 +2,7 @@ img.photo{
 	width: 225px;
 	height: 225px;
 }
+
+div.bs-photo{
+	margin: 20px;
+}

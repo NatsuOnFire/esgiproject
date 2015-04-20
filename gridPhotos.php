@@ -5,10 +5,29 @@
 	$response = $request->execute();
 	$graphObject = $response->getGraphObject()->asArray();
 
-	echo "<pre>";
-	print_r($graphObject);
-	echo "</pre>";
+	//echo "<pre>";
+	//print_r($graphObject);
+	//echo "</pre>";
+	
+	?>
+	
+	<div class="bs-photo">
+		<div class="container">
+			<div class="row">
 
+	<?php
+	
 	foreach ($graphObject["data"] as $image) { ?>
-		<img class="img-thumbnail" src="<?php echo $image->images[5]->source; ?>"/>
+		<div class="col-xs-6">
+        	<div class="thumbnail">
+				<img class="img-thumbnail" src="<?php echo $image->images[0]->source; ?>"/>
+				<div class="caption">
+					<p><a href="#" class="btn btn-primary">Share</a></p>
+				</div>
+			</div>
+		</div>
 	<?php } ?>
+	
+			</div>
+		</div>
+	</div>
