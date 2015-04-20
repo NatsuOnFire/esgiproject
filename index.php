@@ -1,9 +1,15 @@
 <?php
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
-	session_start();	
-	
-	require('libFacebook.php');
+	session_start();
+	require("facebook-php-sdk-v4-4.0-dev/autoload.php");
+
+	use Facebook\FacebookSession;
+	use Facebook\FacebookRedirectLoginHelper;
+	use Facebook\FacebookRequest;
+	use Facebook\GraphUser;
+	use Facebook\FacebookRequestExeption;
+	use Facebook\FacebookAuthorizationException;
 	
 	const APPID = "400624373444818";
 	const APPSECRET = "11514e700dcd954ec5d72d1e80a2dd96";
