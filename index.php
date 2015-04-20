@@ -71,6 +71,9 @@
 		                <h1>Concours photos iVents</h1>
 		                <p>
 		                	Mettez en ligne votre meilleure photo de soirée.
+		                	<?php if(!$session) { 
+		                        echo $message;
+		                    }?>
 		                </p>
 		                
 					</div>
