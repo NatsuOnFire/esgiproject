@@ -5,9 +5,9 @@
 	$response = $request->execute();
 	$graphObject = $response->getGraphObject()->asArray();
 
-	echo "<pre>";
-	print_r($graphObject);
-	echo "</pre>";
+	//echo "<pre>";
+	//print_r($graphObject);
+	//echo "</pre>";
 	
 	?>
 	
@@ -23,7 +23,7 @@
 				<img class="photo" src="<?php echo $image->images[0]->source; ?>"/>
 				<div class="caption">
 					<p>
-						<div class="fb-like" data-href="https://esgiproject2.herokuapp.com/like/<?php echo $image->id ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+						<div class="fb-like" data-href="https://facebookappproject.herokuapp.com/like/<?php echo $image->id ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 					</p>
 				</div>
 			</div>
