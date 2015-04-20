@@ -67,18 +67,12 @@
 		  <script src="./js/jquery-1.11.2.min.js"></script>              
                 <div class="container">
 					<div class="jumbotron">
-						<div class="starter-template">
-		                    <h1>Récupération des informations</h1>
-		                    <p class="lead">
-		                    <?php if(!$session) { 
-		                        echo $message;
-		                    } else { ?>
-		                        Nom : <?php echo $nom; ?> <br />
-		                        Pr&eacute;nom : <?php echo $prenom; ?> <br />
-		                        ID Facebook : <?php echo $id; ?>
-		                    <?php } ?>
-		                        </p>
-		                </div>
+		                
+		                <h1>Concours photos iVents</h1>
+		                <p>
+		                	Mettez en ligne votre meilleure photo de soirée.
+		                </p>
+		                
 					</div>
 				<?php 
 					if($session){
