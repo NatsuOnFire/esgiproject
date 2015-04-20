@@ -65,25 +65,25 @@
 	<body>
 		                
                 <div class="container">
-				
+					<div class="jumbotron">
+						<div class="starter-template">
+		                    <h1>Récupération des informations</h1>
+		                    <p class="lead">
+		                    <?php if(!$session) { 
+		                        echo $message;
+		                    } else { ?>
+		                        Nom : <?php echo $nom; ?> <br />
+		                        Pr&eacute;nom : <?php echo $prenom; ?> <br />
+		                        ID Facebook : <?php echo $id; ?>
+		                    <?php } ?>
+		                        </p>
+		                </div>
+					</div>
 				<?php 
 					if($session){
 						require('gridPhotos.php');
 					}
 				?>
-				
-                <div class="starter-template">
-                    <h1>Récupération des informations</h1>
-                    <p class="lead">
-                    <?php if(!$session) { 
-                        echo $message;
-                    } else { ?>
-                        Nom : <?php echo $nom; ?> <br />
-                        Pr&eacute;nom : <?php echo $prenom; ?> <br />
-                        ID Facebook : <?php echo $id; ?>
-                    <?php } ?>
-                        </p>
-                </div>
 
               </div><!-- /.container -->
                 

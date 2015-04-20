@@ -22,7 +22,7 @@
         	<div class="thumbnail">
 				<img class="photo" src="<?php echo $image->images[0]->source; ?>"/>
 				<div class="caption">
-					<p><a href="#" class="btn btn-primary">Share</a></p>
+					<p><a href="#" class="btn btn-primary">Like</a></p>
 				</div>
 			</div>
 		</div>
