@@ -20,7 +20,7 @@
 	foreach ($graphObject["data"] as $image) { ?>
 		<div class="col-xs-6">
         	<div class="thumbnail">
-				<img class="img-thumbnail" src="<?php echo $image->images[0]->source; ?>"/>
+				<img class="img-thumbnail photo" src="<?php echo $image->images[0]->source; ?>"/>
 				<div class="caption">
 					<p><a href="#" class="btn btn-primary">Share</a></p>
 				</div>
