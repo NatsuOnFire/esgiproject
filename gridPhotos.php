@@ -10,6 +10,6 @@
 	echo "</pre>";
 
 	foreach ($graphObject["data"] as $image) { ?>
-		<img width="300px" class="img-thumbnail" src="<?php $image->images[0]->source ?>">
+		<img class="img-thumbnail" src="<?php $image->images[5]->source;?>"/>
 	<?php }?>
 ?>
