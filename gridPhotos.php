@@ -11,5 +11,4 @@
 
 	foreach ($graphObject["data"] as $image) { ?>
 		<img class="img-thumbnail" src="<?php echo $image->images[5]->source; ?>"/>
-	<?php }?>
-?>
+	<?php } ?>

@@ -60,6 +60,7 @@
 		<title>Facebook App</title>
 		<meta name="description" content="App Facebook">
 		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
 		                
@@ -72,7 +73,7 @@
 				?>
 				
                 <div class="starter-template">
-                    <h1>Récupération des informations</h1>
+                    <h1>R��cup��ration des informations</h1>
                     <p class="lead">
                     <?php if(!$session) { 
                         echo $message;
