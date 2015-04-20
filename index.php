@@ -64,7 +64,7 @@
 		<link rel="stylesheet" href="./css/magnific-popup.css">
 	</head>
 	<body>
-		                
+		  <script src="./js/jquery-1.11.2.min.js"></script>              
                 <div class="container">
 					<div class="jumbotron">
 						<div class="starter-template">
@@ -87,8 +87,7 @@
 				?>
 
               </div><!-- /.container -->
-                
-        <script src="./js/jquery-1.11.2.min.js"></script>      
+                      
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/magnific-popup.js"></script>  
         <script>
