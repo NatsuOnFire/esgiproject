@@ -1,7 +1,7 @@
 <?php
 	use Facebook\FacebookRequest;
 
-	$request = new FacebookRequest($session,'GET','/803426923023846/photos');
+	$request = new FacebookRequest($session,'GET','/10151888599944259/photos');
 	$response = $request->execute();
 	$graphObject = $response->getGraphObject()->asArray();
 
